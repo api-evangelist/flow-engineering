@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS/.well-known/openid-configuration
+docs: https://flowengineering.com/security
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [authorizationCode, implicit]
+  provider: AWS Cognito
+  enterprise_sso: [SAML, SCIM]
+schemes:
+- name: Cognito OAuth2 / OIDC
+  type: oauth2
+  provider: AWS Cognito (user pool eu-west-2_iODQDOUFS, region eu-west-2)
+  issuer: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS
+  authorization_url: https://flowengineering.auth.eu-west-2.amazoncognito.com/oauth2/authorize
+  token_url: https://flowengineering.auth.eu-west-2.amazoncognito.com/oauth2/token
+  userinfo_url: https://flowengineering.auth.eu-west-2.amazoncognito.com/oauth2/userInfo
+  revocation_url: https://flowengineering.auth.eu-west-2.amazoncognito.com/oauth2/revoke
+  end_session_url: https://flowengineering.auth.eu-west-2.amazoncognito.com/logout
+  jwks_uri: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS/.well-known/jwks.json
+  response_types_supported: [code, token]
+  id_token_signing_alg: RS256
+  token_endpoint_auth_methods: [client_secret_basic, client_secret_post]
+  token_format: JWT bearer (RS256) presented to the GraphQL API as Authorization header
+enterprise:
+  note: >-
+    The /security page documents SAML SSO and SCIM provisioning with granular role-based access
+    control for enterprise tenants, layered on top of the Cognito identity backend.
+api_endpoint:
+  url: https://api.flowengineering.com/v1/graphql
+  auth: OAuth2 bearer (Cognito-issued JWT); unauthenticated requests return
+    access-denied ("Authentication hook unauthorized this request")
