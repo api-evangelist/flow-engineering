@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.flowengineering.com/v1/graphql
+docs: https://flowengineering.com/security
+api_style:
+  paradigm: GraphQL
+  endpoint: https://api.flowengineering.com/v1/graphql
+  transport: HTTPS POST (single endpoint)
+  note: >-
+    Backend responds with Hasura-style GraphQL error envelopes. An unauthenticated request
+    returns {"errors":[{"message":"Authentication hook unauthorized this request",
+    "extensions":{"path":"$","code":"access-denied"}}]}.
+authentication:
+  style: OAuth2 bearer (AWS Cognito JWT, RS256)
+  header: 'Authorization: Bearer <cognito-jwt>'
+  see: authentication/flow-engineering-authentication.yml
+error_envelope:
+  format: GraphQL errors[] with extensions.code
+  observed_codes: [access-denied]
+  see: null
+pagination:
+  style: unknown-graphql
+  note: >-
+    GraphQL connection/pagination arguments are defined in the (auth-gated) schema and are not
+    publicly documented; not captured to avoid fabrication.
+idempotency:
+  supported: unknown
+  note: >-
+    No public idempotency-key contract is documented; GraphQL mutations are the write surface.
+    Not asserting idempotency support.
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: GraphQL path is /v1/graphql

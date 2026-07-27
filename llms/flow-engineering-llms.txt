@@ -1,0 +1,28 @@
+# Flow Engineering
+
+> Requirements-management and AI-agent platform for hardware engineering teams. Flow's Systems Graph connects requirements, CAD, simulation, code, and test into one system of record, and its AI agents continuously run impact analysis, check test coverage, verify compliance, and track mass/cost/power budgets as designs change. Backed by a GraphQL API secured with AWS Cognito OAuth2/OIDC. Portfolio company of EQT Ventures.
+
+## APIs
+
+- [Flow GraphQL API](https://api.flowengineering.com/v1/graphql): Single GraphQL endpoint over the Systems Graph (requirements, design artifacts, test cases, integrations). OAuth2 bearer auth (AWS Cognito). API access included on Basic, Pro, and Enterprise plans.
+
+## Authentication
+
+- [Authentication profile](authentication/flow-engineering-authentication.yml): OAuth2 / OIDC via AWS Cognito (user pool eu-west-2_iODQDOUFS). SAML SSO and SCIM for enterprise.
+- [OAuth scopes](scopes/flow-engineering-scopes.yml): openid, email, phone, profile.
+- [OIDC discovery](well-known/flow-engineering-openid-configuration.json): Cognito user pool openid-configuration.
+
+## Security & Compliance
+
+- [Security & compliance](https://flowengineering.com/security): SOC 2 Type II, NIST 800-171, ITAR/EAR aligned, GDPR; continuous third-party pen testing; AI data never used for training.
+- [Trust center artifact](security/flow-engineering-trust-center.yml)
+- [Conformance](conformance/flow-engineering-conformance.yml)
+
+## Product & Docs
+
+- [Home](https://flowengineering.com/)
+- [Pricing](https://flowengineering.com/pricing): Basic $150/editor/mo, Pro $300/editor/mo, Enterprise custom (ITAR AWS GovCloud).
+- [Integrations](https://flowengineering.com/integrations): Onshape, GitHub, GitLab, Jira, Linear, Slack, Confluence, Notion, SharePoint, Google Drive, Excel, Google Sheets, Relyence, and more.
+- [Blog](https://flowengineering.com/blog)
+- [Sign in](https://app.flowengineering.com/sign-in)
+- [Privacy & Cookie Policy](https://flowengineering.com/privacy-and-cookie-policy)

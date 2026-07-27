@@ -1,0 +1,47 @@
+generated: '2026-07-19'
+method: searched
+source: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS/.well-known/openid-configuration
+notes: >-
+  Flow Engineering's application host (app.flowengineering.com) returns HTTP 200 for every
+  /.well-known/* path, but the body is the Next.js SPA HTML shell (a [base]/[orgSlug] catch-all
+  route), not a real well-known document — those were NOT captured. The real OIDC discovery
+  document is served by the provider's AWS Cognito user pool (eu-west-2_iODQDOUFS), which is
+  Flow's identity backend; it is captured verbatim below. The marketing host
+  (flowengineering.com) returns 404 for all probed /.well-known/* paths and /llms.txt.
+hosts_probed:
+- https://flowengineering.com
+- https://app.flowengineering.com
+- https://api.flowengineering.com
+- https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS
+documents:
+- path: /.well-known/openid-configuration
+  host: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS
+  status: 200
+  file: flow-engineering-openid-configuration.json
+- path: /.well-known/jwks.json
+  host: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS
+  status: 200
+  file: null
+- path: /.well-known/security.txt
+  host: https://flowengineering.com
+  status: 404
+- path: /.well-known/openid-configuration
+  host: https://flowengineering.com
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  host: https://flowengineering.com
+  status: 404
+- path: /.well-known/api-catalog
+  host: https://flowengineering.com
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: https://flowengineering.com
+  status: 404
+- path: /.well-known/security.txt
+  host: https://app.flowengineering.com
+  status: 200
+  note: SPA HTML shell, not a real security.txt — not captured
+- path: /.well-known/openid-configuration
+  host: https://app.flowengineering.com
+  status: 200
+  note: SPA HTML shell, not real OIDC discovery — not captured

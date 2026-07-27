@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://flowengineering.com/security
+standards:
+- id: oauth2
+  conforms: true
+  evidence: AWS Cognito OAuth2 authorization/token endpoints advertised in OIDC discovery
+- id: oidc
+  conforms: true
+  evidence: openid-configuration served by Cognito user pool eu-west-2_iODQDOUFS (RS256 id tokens)
+- id: soc2-type-ii
+  conforms: true
+  evidence: '/security page: "SOC 2 Type II and continuous third-party penetration testing on every release"'
+- id: nist-800-171
+  conforms: true
+  evidence: '/security page: NIST 800-171 (Controlled Unclassified Information)'
+- id: itar-ear
+  conforms: true
+  evidence: '/security page: ITAR / EAR aligned; Enterprise plan offers ITAR AWS GovCloud'
+- id: gdpr
+  conforms: true
+  evidence: '/security page: GDPR compliant'
+- id: saml-sso
+  conforms: true
+  evidence: '/security page: SAML SSO'
+- id: scim
+  conforms: true
+  evidence: '/security page: SCIM provisioning'

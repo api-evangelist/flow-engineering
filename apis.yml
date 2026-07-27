@@ -1,22 +1,62 @@
 aid: flow-engineering
 name: Flow Engineering
-description: 'Flow Engineering is a company surfaced as a portfolio company of eqt-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: software-development. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Flow Engineering builds a requirements-management and AI-agent platform for hardware
+  engineering teams. Its Systems Graph connects requirements, CAD, simulation, code, and test into a
+  single system of record, and its AI agents continuously run impact analysis, check test coverage,
+  verify compliance, and track mass, cost, and power budgets as designs change. Flow integrates with
+  CAD, PLM, simulation, and developer tools (Onshape, GitHub, GitLab, Jira, Linear, Confluence, and
+  more) and is used by hardware teams at companies such as Rivian, Joby, Skydio, and Isar Aerospace.
+  The platform is backed by a GraphQL API at api.flowengineering.com secured with AWS Cognito OAuth2/OIDC,
+  with API access included on paid plans. Flow Engineering is a portfolio company of EQT Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/flow-engineering/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - eqt-ventures
-x-tier: stub
+x-tier: enriched
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://images.ctfassets.net/c2mtbunjxyfe/2QGR6p0asAXpvpfMUqWciO/0f4467ec22711446d218284b2aa4a5e3/open-graph.png
 tags:
 - Company
 - Software Development
-apis: []
+- Hardware Engineering
+- Requirements Management
+- Systems Engineering
+- MBSE
+- AI Agents
+- CAD
+- Product Lifecycle Management
+- GraphQL
+apis:
+- name: Flow GraphQL API
+  description: 'Flow Engineering exposes a GraphQL API for programmatic access to the Systems Graph
+    (requirements, design artifacts, test cases, and integrations). The single GraphQL endpoint is
+    served from api.flowengineering.com and is authenticated with AWS Cognito OAuth2/OIDC bearer
+    tokens. API access is included on the Basic, Pro, and Enterprise plans.'
+  humanURL: https://flowengineering.com/
+  baseURL: https://api.flowengineering.com/v1/graphql
+  properties:
+  - type: GraphQL
+    url: https://api.flowengineering.com/v1/graphql
+  - type: Authentication
+    url: authentication/flow-engineering-authentication.yml
+  - type: OAuthScopes
+    url: scopes/flow-engineering-scopes.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +65,38 @@ maintainers:
 common:
 - type: Website
   url: https://flowengineering.com/
+- type: SignUp
+  url: https://app.flowengineering.com/sign-in
+- type: Login
+  url: https://app.flowengineering.com/sign-in
+- type: Pricing
+  url: https://flowengineering.com/pricing
+- type: Blog
+  url: https://flowengineering.com/blog
+- type: PrivacyPolicy
+  url: https://flowengineering.com/privacy-and-cookie-policy
+- type: Integrations
+  url: https://flowengineering.com/integrations
+- type: Compliance
+  url: https://flowengineering.com/security
+- type: WellKnown
+  url: well-known/flow-engineering-well-known.yml
+- type: Authentication
+  url: authentication/flow-engineering-authentication.yml
+- type: OAuthScopes
+  url: scopes/flow-engineering-scopes.yml
+- type: Conformance
+  url: conformance/flow-engineering-conformance.yml
+- type: TrustCenter
+  url: security/flow-engineering-trust-center.yml
+- type: DomainSecurity
+  url: security/flow-engineering-domain-security.yml
+- type: Conventions
+  url: conventions/flow-engineering-conventions.yml
+- type: LLMsTxt
+  url: llms/flow-engineering-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

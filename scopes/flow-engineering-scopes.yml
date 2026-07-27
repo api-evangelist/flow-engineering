@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS/.well-known/openid-configuration
+schemes:
+- name: Cognito OAuth2 / OIDC
+  source: https://cognito-idp.eu-west-2.amazonaws.com/eu-west-2_iODQDOUFS/.well-known/openid-configuration
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://flowengineering.auth.eu-west-2.amazoncognito.com/oauth2/authorize
+    tokenUrl: https://flowengineering.auth.eu-west-2.amazoncognito.com/oauth2/token
+  - flow: implicit
+    authorizationUrl: https://flowengineering.auth.eu-west-2.amazoncognito.com/oauth2/authorize
+scopes:
+- scope: openid
+  description: OpenID Connect authentication; returns the subject identifier in the ID token.
+  flows: [authorizationCode, implicit]
+- scope: email
+  description: Access to the user's email address and email_verified claim.
+  flows: [authorizationCode, implicit]
+- scope: phone
+  description: Access to the user's phone number and phone_number_verified claim.
+  flows: [authorizationCode, implicit]
+- scope: profile
+  description: Access to the user's standard profile claims (name, etc.).
+  flows: [authorizationCode, implicit]
+notes: >-
+  scopes_supported reflects the standard OIDC scopes advertised by the Cognito user pool
+  discovery document. Any Flow-specific resource-server scopes are not advertised at the pool
+  discovery endpoint and would require the documented enterprise onboarding.

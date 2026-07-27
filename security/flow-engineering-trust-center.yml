@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+source: https://flowengineering.com/security
+url: https://flowengineering.com/security
+certifications:
+- SOC 2 Type II
+- NIST 800-171
+- ITAR / EAR aligned
+- GDPR
+practices:
+- Continuous third-party penetration testing on every release
+- SAML SSO, SCIM, and granular role-based access control
+- AI data privacy: prompts, documents, and outputs are never used to train any model
+- Full audit logging of every AI action (prompt, retrieved context, triggering user)
+- ITAR AWS GovCloud deployment option (Enterprise plan)
+evidence:
+- source: https://flowengineering.com/security
+  keywords: [soc 2 type ii, nist 800-171, itar, ear, gdpr, penetration testing, saml sso, scim]
