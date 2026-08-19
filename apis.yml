@@ -27,7 +27,7 @@ accessModel:
   - authentication
   generated: '2026-07-22'
   method: derived
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 image: https://images.ctfassets.net/c2mtbunjxyfe/2QGR6p0asAXpvpfMUqWciO/0f4467ec22711446d218284b2aa4a5e3/open-graph.png
