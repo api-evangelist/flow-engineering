@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Flow Engineering is a company surfaced as a portfolio company of eqt-ventures and added to the API Evangelist network as a stub for enrichment. Sector: software-development. This profile is a lead awaiting the enrichment pipeline.
+Flow Engineering builds a requirements-management and AI-agent platform for hardware engineering teams. Its Systems Graph connects requirements, CAD, simulation, code, and test into a single system of record, and its AI agents continuously run impact analysis, check test coverage, verify compliance, and track mass, cost, and power budgets as designs change. Flow integrates with CAD, PLM, simulation, and developer tools (Onshape, GitHub, GitLab, Jira, Linear, Confluence, and more) and is used by hardware teams at companies such as Rivian, Joby, Skydio, and Isar Aerospace. The platform is backed by a GraphQL API at api.flowengineering.com secured with AWS Cognito OAuth2/OIDC, with API access included on paid plans. Flow Engineering is a portfolio company of EQT Ventures.
 
-Backed by: eqt-ventures — https://flowengineering.com/
+**Areas:** Company · Software Development · Hardware Engineering · Requirements Management · Systems Engineering · MBSE · AI Agents · CAD · PLM · GraphQL
+
+## Flow Engineering on APIs.io
+
+Everything profiled for Flow Engineering is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/flow-engineering/](https://apis.io/providers/flow-engineering/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Flow GraphQL API](https://apis.io/apis/flow-engineering/flow-graphql-api/) — Flow Engineering exposes a GraphQL API for programmatic access to the Systems Graph (requirements, design artifacts, test cases, and integrations). The…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Flow Engineering Authentication](https://apis.io/security/flow-engineering/flow-engineering-authentication/)
+- [Flow Engineering Domain Security](https://apis.io/security/flow-engineering/flow-engineering-domain-security/)
+- [Flow Engineering Trust Center](https://apis.io/security/flow-engineering/flow-engineering-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Flow Engineering Scopes](https://apis.io/scopes/flow-engineering/flow-engineering-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://flowengineering.com/)
+- [Pricing](https://flowengineering.com/pricing)
+- [Sign up](https://app.flowengineering.com/sign-in)
+- [Blog](https://flowengineering.com/blog)
+- [Compliance](https://flowengineering.com/security)
+- [Privacy policy](https://flowengineering.com/privacy-and-cookie-policy)
+
+## API Evangelist rating
+
+**Kin Score 26.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 5.3 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 50.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/flow-engineering/](https://apis.io/providers/flow-engineering/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Flow Engineering: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/flow-engineering/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
